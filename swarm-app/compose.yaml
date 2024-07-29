@@ -6,8 +6,6 @@ networks:
     driver: overlay
     driver_opts:
       encrypted: 'yes'
-volumes:
-  counter-vol:
 
 services:
   web-fe:
