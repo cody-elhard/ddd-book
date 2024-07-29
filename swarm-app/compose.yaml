@@ -11,10 +11,10 @@ volumes:
 
 services:
   web-fe:
-    image: nigelpoulton/ddd-book:swarm-app
+    image: nigelpoulton/ddd-book:swarm-appv2
     command: python app.py
     deploy:
-      replicas: 4
+      replicas: 10
       update_config:
         parallelism: 2
         delay: 10s
