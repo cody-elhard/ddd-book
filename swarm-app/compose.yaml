@@ -30,10 +30,6 @@ services:
     ports:
       - published: 5001
         target: 8080
-    volumes:
-      - type: volume
-        source: counter-vol
-        target: /app
   redis:
     image: "redis:alpine"
     networks:
